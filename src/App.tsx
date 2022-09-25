@@ -9,12 +9,12 @@ import { TableArea } from "./components/TableArea";
 
 const App = () => {
   const [list, setList] = useState(items);
-  const [filterRedList, setFilterRedList] = useState<Item[]>([]);
+  const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
 
   useEffect(() => {
-    setFilterRedList(filterListByMonth(list, currentMonth));
-  }, [list, currentMonth]);
+    setFilteredList(filterListByMonth(list, currentMonth));
+  }, [currentMonth, list]);
 
   return (
     <C.Container>
@@ -23,12 +23,21 @@ const App = () => {
       </C.Header>
       <C.Body>
         {/* Área de informações */}
+
         {/* Área de inserção */}
+
         {/* Tabela de itens */}
-        <TableArea />
+        <TableArea list={filteredList} />
+        
+
+        
       </C.Body>
     </C.Container>
   );
 };
 
 export default App;
+
+{
+  /* PAREI DO 51:11 */
+}

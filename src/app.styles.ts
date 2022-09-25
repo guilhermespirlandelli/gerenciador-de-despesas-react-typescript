@@ -11,7 +11,7 @@ export const Header = styled.div`
 export const HeaderText = styled.h1`
     magin: 0px;
     padding: 0px;
-    color: #fff;
+    color: lightgray;
     padding-top: 30px;
 `;
 
