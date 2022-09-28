@@ -38,6 +38,4 @@ const App = () => {
 
 export default App;
 
-{
-  /* PAREI DO 51:11 */
-}
+/* PAREI NO 01:17:00 */
